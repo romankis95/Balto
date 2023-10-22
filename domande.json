@@ -1,0 +1,54 @@
+[{
+        "domanda": "Quanto Balto sà orientarsi per Roma?",
+        "risposta": "Dipende, se ce Roman finisce al capolinea. Opposto",
+        "opzioni": ["Dipende, se ce Roman finisce al capolinea. Opposto.", "Tanto, è un segugio", ""]
+    },
+    {
+        "domanda": "Ivan?",
+        "risposta": "IVAN",
+        "opzioni": ["IVAN", "Damian?", "Ciuchino"]
+    },
+    {
+        "domanda": "A che piano va signorina?",
+        "risposta": "Signorina, come sempre ha ragione",
+        "opzioni": ["Signorina, come sempre ha ragione"]
+    },
+    {
+        "domanda": "Tagliamo la Magnolia?",
+        "risposta": "E il pettirosso poi che fine fa?",
+        "opzioni": []
+    },
+    {
+        "domanda": "Vamos Argentina!!!",
+        "risposta": "Vamos vamos!",
+        "opzioni": ["Vamos vamos!"]
+    },
+    {
+        "domanda": "Scusi, ma poi il pullam torna indietro?",
+        "risposta": "Scusi, intendevo oggi torna indietro?",
+        "opzioni": ["Scusi, intendevo oggi torna indietro?"]
+    },
+    {
+        "domanda": "Ciao Piccione!",
+        "risposta": "Ciao Balto!",
+        "opzioni": ["Ciao Balto!"]
+    },
+    {
+        "domanda": "Roman ripara la lavastoviglie te che sei un informatico",
+        "risposta": "Ma mamma...",
+        "opzioni": ["Ma mamma..."]
+    },
+    {
+        "domanda": "",
+        "risposta": "",
+        "opzioni": [""]
+    },{
+        "domanda": "",
+        "risposta": "",
+        "opzioni": [""]
+    },{
+        "domanda": "",
+        "risposta": "",
+        "opzioni": [""]
+    }
+]
