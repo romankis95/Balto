@@ -13,48 +13,47 @@ const quizData = [{
     {
         "domanda": "A che piano va signorina?\r\nGuardi che è il suo ascensore privato!",
         "risposta": "Signorina, come sempre ha ragione",
-        "opzioni": ["Signorina, come sempre ha ragione", "Ah si?"]
+        "opzioni": ["Signorina, come sempre ha ragione", "Ah si?", "Qualcuno chiami il presidente"]
     },
     {
         "domanda": "Tagliamo la Magnolia?",
         "risposta": "E il pettirosso poi che fine fa?",
-        "opzioni": ["E il pettirosso poi che fine fa?", "Qualcuno pensi al pampini"]
+        "opzioni": ["E il pettirosso poi che fine fa?", "Qualcuno pensi al pampini", "Me magnerei na bella pizza!"]
     },
     {
         "domanda": "Vamos Argentina!!!",
         "risposta": "Vamos vamos!",
-        "opzioni": ["Vamos vamos!", "Io tifo il milan"]
+        "opzioni": ["Vamos vamos!", "Io tifo il milan", "A me piace la Paella"]
     },
     {
         "domanda": "Scusi, ma poi il pullman torna indietro?\r\nSi.",
         "risposta": "Scusi, intendevo oggi torna indietro?",
-        "opzioni": ["Scusi, intendevo oggi torna indietro?", "Ma che vo' da me?"]
+        "opzioni": ["Scusi, intendevo oggi torna indietro?", "Ma che vo' da me?", "Prendi il treno"]
     },
     {
         "domanda": "Ciao Piccione!",
         "risposta": "Ciao Balto!",
-        "opzioni": ["Ciao Balto!", "Che schifo un piccione."]
+        "opzioni": ["Ciao Balto!", "Che schifo un piccione.","Ciao Mario"]
     },
     {
-        "domanda": "Roman ripara la lavastoviglie te che sei un informatico",
-        "risposta": "Ma mamma...",
-        "opzioni": ["Ma mamma..."]
+        "domanda": "Roman ripara la lavastoviglie te che sei un informatico.\r\nMa mamma...veramente...",
+        "risposta": "Zitto coglione!",
+        "opzioni": ["Zitto coglione!",""]
     },
     {
-        "domanda": "Cosa dovevi fare invece dell'uni?",
-        "risposta": "**meme gatto** la troiaaaaaaaaa!",
-        "opzioni": ["**meme gatto** la troiaaaaaaaaa!"],
-        "note": "da valutare attentamente"
+        "domanda": "Che dos balotaaaaaaas",
+        "risposta": "**meme gatto**",
+        "opzioni": ["**meme gatto**", "No non fumo grazie!", "Giochi a calcio?"],
     },
     {
         "domanda": "Spread, sprode, spruden?",
-        "risposta": "solo quel coglione di roman poteva inventarla così",
-        "opzioni": ["E' giusto.", "solo quel coglione di roman poteva inventarla così"]
+        "risposta": "Solo quel coglione di roman poteva inventarla così",
+        "opzioni": ["E' giusto.", "Solo quel coglione di roman poteva inventarla così", "Je ne parlé francé"]
     },
     {
         "domanda": "Due bottiglie di rosso, una paglia con mamma, cosa facciamo ora?",
         "risposta": "Correggiamo le verifiche!",
-        "opzioni": ["Correggiamo le verifiche!"]
+        "opzioni": ["Correggiamo le verifiche!", "Andiamo di amari", "Mamma?"]
     },
     {
         "domanda": "Hai una pianta carnivora. come la chiami?",
@@ -74,7 +73,7 @@ const quizData = [{
     {
         "domanda": "Qualcuno ti regala un quaderno a forma di darth vader, che fa il suono tipico. Per sbaglio lo fai partire a lezione in uni, cosa fai?",
         "risposta": "HEHEHEHEEHE, bimba felicia",
-        "opzioni": ["HEHEHEHEEHE, bimba felicia", "lo nascondo"]
+        "opzioni": ["HEHEHEHEEHE, bimba felicia", "Lo nascondo", "Dico che non è mio"]
     },
     {
         "domanda": "Devi andare a visitare un paese, con quali criteri scegli la meta?",
@@ -84,7 +83,7 @@ const quizData = [{
     {
         "domanda": "Hi do you speak english? No.",
         "risposta": "Neither do i",
-        "opzioni": ["Neither do i"]
+        "opzioni": ["Neither do i", "E voi chi cazzo siete?", "Vi porto il conto"]
     },
     {
         "domanda": "Su 1000 meme che ricevi al giorno, quanti ti fanno ridere? E quant fanno ridere a roman?",
