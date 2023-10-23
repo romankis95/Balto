@@ -1,7 +1,7 @@
 [{
         "domanda": "Quanto Balto sà orientarsi per Roma?",
-        "risposta": "Dipende, se ce Roman finisce al capolinea. Opposto",
-        "opzioni": ["Dipende, se ce Roman finisce al capolinea. Opposto.", "Tanto, è un segugio", ""]
+        "risposta": "Dipende, se ce Roman finisce al capolinea. Opposto.",
+        "opzioni": ["Dipende, se ce Roman finisce al capolinea. Opposto.", "Tanto, è un segugio", "E' meglio di waze!"]
     },
     {
         "domanda": "Ivan?",
@@ -16,7 +16,7 @@
     {
         "domanda": "Tagliamo la Magnolia?",
         "risposta": "E il pettirosso poi che fine fa?",
-        "opzioni": []
+        "opzioni": ["E il pettirosso poi che fine fa?"]
     },
     {
         "domanda": "Vamos Argentina!!!",
@@ -56,13 +56,13 @@
         "risposta": "Benito",
         "opzioni": ["Carlo", "Benito", "Giorgia, sono una mamma, sono una donna, sono CRISTIANAAAAA"]
     },{
-        "domanda": "",
-        "risposta": "",
-        "opzioni": [""]
+        "domanda": "Andiamo a vivere insieme?",
+        "risposta": "Solo se prima affitti un faro",
+        "opzioni": ["Solo se prima affitti un faro", "Si", "No"]
     },{
-        "domanda": "",
-        "risposta": "",
-        "opzioni": [""]
+        "domanda": "Secondo te, roman imparerà mai ad abbinare pantaloni e maglia?",
+        "risposta": "AHAHAH, no",
+        "opzioni": ["AHAHAH, no", "Prima o poi", "Si"]
     },{
         "domanda": "",
         "risposta": "",
