@@ -24,7 +24,7 @@
         "opzioni": ["Vamos vamos!"]
     },
     {
-        "domanda": "Scusi, ma poi il pullam torna indietro?",
+        "domanda": "Scusi, ma poi il pullman torna indietro?\r\nSi.",
         "risposta": "Scusi, intendevo oggi torna indietro?",
         "opzioni": ["Scusi, intendevo oggi torna indietro?"]
     },
