@@ -11,29 +11,29 @@ const quizData = [{
         "opzioni": ["IVAN", "Damian?", "Ciuchino"]
     },
     {
-        "domanda": "A che piano va signorina?",
+        "domanda": "A che piano va signorina?\r\nGuardi che è il suo ascensore privato!",
         "risposta": "Signorina, come sempre ha ragione",
-        "opzioni": ["Signorina, come sempre ha ragione"]
+        "opzioni": ["Signorina, come sempre ha ragione", "Ah si?"]
     },
     {
         "domanda": "Tagliamo la Magnolia?",
         "risposta": "E il pettirosso poi che fine fa?",
-        "opzioni": ["E il pettirosso poi che fine fa?"]
+        "opzioni": ["E il pettirosso poi che fine fa?", "Qualcuno pensi al pampini"]
     },
     {
         "domanda": "Vamos Argentina!!!",
         "risposta": "Vamos vamos!",
-        "opzioni": ["Vamos vamos!"]
+        "opzioni": ["Vamos vamos!", "Io tifo il milan"]
     },
     {
         "domanda": "Scusi, ma poi il pullman torna indietro?\r\nSi.",
         "risposta": "Scusi, intendevo oggi torna indietro?",
-        "opzioni": ["Scusi, intendevo oggi torna indietro?"]
+        "opzioni": ["Scusi, intendevo oggi torna indietro?", "Ma che vo' da me?"]
     },
     {
         "domanda": "Ciao Piccione!",
         "risposta": "Ciao Balto!",
-        "opzioni": ["Ciao Balto!"]
+        "opzioni": ["Ciao Balto!", "Che schifo un piccione."]
     },
     {
         "domanda": "Roman ripara la lavastoviglie te che sei un informatico",
@@ -151,16 +151,19 @@ const resultsContainer = document.getElementById('results-container');
 const questionText = document.getElementById('question-text');
 const optionsList = document.getElementById('options');
 const heartContainer = document.getElementById('heart-container');
+const questionCountText = document.getElementById('question-count'); // Aggiunto il contatore delle domande
 
 let currentQuestionIndex = 0;
 let score = 0;
 let lives = 3;
+let = questionCount = 0;
 
 function loadQuestion() {
     if (currentQuestionIndex < quizData.length) {
         const question = quizData[currentQuestionIndex];
         questionText.innerText = question.domanda;
         optionsList.innerHTML = '';
+        updateQuestionCount(); // Aggiunto l'aggiornamento del contatore
 
         const optionsContainer = document.createElement('ul');
         optionsContainer.id = 'options-list'; // Aggiungi un ID per lo stile della lista
@@ -180,6 +183,11 @@ function loadQuestion() {
     }
 }
 
+function updateQuestionCount() {
+    questionCount++;
+    // Aggiorna il testo del contatore delle domande con il numero corrente e il totale.
+    questionCountText.innerText = `Domanda ${questionCount} su ${quizData.length}`;
+}
 
 function checkAnswer(selectedOption) {
     const question = quizData[currentQuestionIndex];
@@ -189,7 +197,9 @@ function checkAnswer(selectedOption) {
         lives--; // Riduci una vita per ogni errore
         updateLivesDisplay();
     }
-
+    if (lives===0){
+        showResults();
+    }
     if (currentQuestionIndex === quizData.length - 1) {
         // Se l'utente ha risposto a tutte le domande, mostra i risultati
         showResults();
@@ -217,6 +227,7 @@ function showFailure() {
 }
 
 function resetGame() {
+    questionCount = 0;
     currentQuestionIndex = 0;
     score = 0;
     lives = 3;
@@ -238,6 +249,16 @@ function showResults() {
         congratsButton.id = 'congrats-button';
         congratsButton.addEventListener('click', showPrize);
         resultsContainer.appendChild(congratsButton);
+    }else{
+        const noLivesMessage = document.createElement('p');
+        noLivesMessage.innerText = 'Mi dispiace, secondo il nostro complicatissimo algoritmo, non sei un vero balto';
+        resultsContainer.appendChild(noLivesMessage);
+
+        const retryButton = document.createElement('button');
+        retryButton.innerText = 'Riprova';
+        retryButton.id = 'retry-button';
+        retryButton.addEventListener('click', resetGame);
+        resultsContainer.appendChild(retryButton);
     }
 }
 
@@ -271,14 +292,36 @@ function showPrize() {
     // audio.play();
 }
 
+// function updateLivesDisplay() {
+//     heartContainer.innerHTML = '';
+//     for (let i = 0; i < lives; i++) {
+//         const heartIcon = document.createElement('span');
+//         heartIcon.innerHTML = '❤️';
+//         heartContainer.appendChild(heartIcon);
+//     }
+// }
+ 
+// Add the paths to your heart images
+const fullHeartImage = '/images/1.png';
+const emptyHeartImage = '/images/2.png';
+
 function updateLivesDisplay() {
     heartContainer.innerHTML = '';
     for (let i = 0; i < lives; i++) {
-        const heartIcon = document.createElement('span');
-        heartIcon.innerHTML = '❤️';
+        const heartIcon = document.createElement('img');
+        heartIcon.src = fullHeartImage; // Display a full heart
+        heartIcon.alt = '❤️'; // Alt text for accessibility
+        heartContainer.appendChild(heartIcon);
+    }
+    const remainingEmptyHearts = 3 - lives;
+    for (let i = 0; i < remainingEmptyHearts; i++) {
+        const heartIcon = document.createElement('img');
+        heartIcon.src = emptyHeartImage; // Display an empty heart for remaining lives
+        heartIcon.alt = '🤍'; // Alt text for accessibility
         heartContainer.appendChild(heartIcon);
     }
 }
+
 updateLivesDisplay();
 
 startButton.addEventListener('click', () => {

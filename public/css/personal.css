@@ -52,6 +52,9 @@ h1 {
     animation: pulse 1s infinite;
 }
 
+#heart-container {
+    text-align: center;
+}
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -103,4 +106,20 @@ h1 {
 
 #retry-button:hover {
     background-color: #e65959;
+}
+
+#congrats-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px; /* Aggiunto il margine sopra il pulsante */
+}
+
+#congrats-button:hover {
+    background-color: #45a049;
 }
