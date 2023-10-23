@@ -97,16 +97,16 @@ const quizData = [{
             "Cena a lume di candela con tizio che suona il violino", "All'IKEA a prendere uno ǍƏƚƚšŒ"
         ]
     },
-    // {
-    //     "domanda": "",
-    //     "risposta": "",
-    //     "opzioni": [""]
-    // },
-    // {
-    //     "domanda": "",
-    //     "risposta": "",
-    //     "opzioni": [""]
-    // },
+    {
+        "domanda": "Quando devi fare l'ennesima traduzione di Zelensky, cosa senti ogni mattina? ",
+        "risposta": "dobreizewski nazdarvorvia slava ukranini",
+        "opzioni": ["dobreizewski nazdarvorvia slava ukranini", "cari concittadini...", "Boh chi lo capisce"]
+    },
+    {
+        "domanda": "Hai i coglioni girati, qual è la combo giusta per tirarti su di morale?",
+        "risposta": "Mac, parcheggino, e un pirla in macchina",
+        "opzioni": ["Serata al pub", "Mi chiudo in camera", "Mac, parcheggino, e un pirla in macchina"]
+    },
     // {
     //     "domanda": "",
     //     "risposta": "",
