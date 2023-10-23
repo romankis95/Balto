@@ -41,65 +41,79 @@
     {
         "domanda": "Cosa dovevi fare invece dell'uni?",
         "risposta": "**meme gatto** la troiaaaaaaaaa!",
-        "opzioni": ["**meme gatto** la troiaaaaaaaaa!"],
-            "note":"da valutare attentamente"
-    },{
+        "opzioni": ["**meme gatto** la troiaaaaaaaaa!"],"note":"da valutare attentamente"
+    },
+        {
         "domanda": "Spread, sprode, spruden?",
         "risposta": "solo quel coglione di roman poteva inventarla così",
         "opzioni": ["E' giusto.", "solo quel coglione di roman poteva inventarla così"]
-    },{
+    },
+        {
         "domanda": "Due bottiglie di rosso, una paglia con mamma, cosa facciamo ora?",
         "risposta": "Correggiamo le verifiche!",
         "opzioni": ["Correggiamo le verifiche!"]
-    },{
+    },
+        {
         "domanda": "Hai una pianta carnivora. come la chiami?",
         "risposta": "Benito",
         "opzioni": ["Carlo", "Benito", "Giorgia, sono una mamma, sono una donna, sono CRISTIANAAAAA"]
-    },{
+    },
+        {
         "domanda": "Andiamo a vivere insieme?",
         "risposta": "Solo se prima affitti un faro",
         "opzioni": ["Solo se prima affitti un faro", "Si", "No"]
-    },{
+    },
+        {
         "domanda": "Secondo te, roman imparerà mai ad abbinare pantaloni e maglia?",
         "risposta": "AHAHAH, no",
         "opzioni": ["AHAHAH, no", "Prima o poi", "Si"]
-    },{
+    },
+        {
         "domanda": "Qualcuno ti regala un quaderno a forma di darth vader, che fa il suono tipico. Per sbaglio lo fai partire a lezione in uni, cosa fai?",
         "risposta": "HEHEHEHEEHE, bimba felicia",
         "opzioni": ["HEHEHEHEEHE, bimba felicia", "lo nascondo"]
-    },{
+    },
+        {
         "domanda": "Devi andare a visitare un paese, con quali criteri scegli la meta?",
         "risposta": "Conflitto in corso, mine e missili",
         "opzioni": ["Conflitto in corso, mine e missili"]
-    },{
+    },
+        {
         "domanda": "Hi do you speak english? No.",
         "risposta": "Neither do i",
         "opzioni": ["Neither do i"]
-    },{
+    },
+        {
+        "domanda": "Su 1000 meme che ricevi al giorno, quanti ti fanno ridere? E quant fanno ridere a roman?",
+        "risposta": "1 a me, 1000 a lui",
+        "opzioni": ["1 a me, 1000 a lui", "tutti", "alcuni"]
+    },
+        {
         "domanda": "",
         "risposta": "",
         "opzioni": [""]
-    },{
+    },
+        {
         "domanda": "",
         "risposta": "",
         "opzioni": [""]
-    },{
+    },
+        {
         "domanda": "",
         "risposta": "",
         "opzioni": [""]
-    },{
+    },
+        {
         "domanda": "",
         "risposta": "",
         "opzioni": [""]
-    },{
+    },
+        {
         "domanda": "",
         "risposta": "",
         "opzioni": [""]
-    },{
-        "domanda": "",
-        "risposta": "",
-        "opzioni": [""]
-    },{
+    },
+        {
         "domanda": "",
         "risposta": "",
         "opzioni": [""]
