@@ -107,21 +107,22 @@ const quizData = [{
         "risposta": "Mac, parcheggino, e un pirla in macchina",
         "opzioni": ["Serata al pub", "Mi chiudo in camera", "Mac, parcheggino, e un pirla in macchina"]
     },
-    // {
-    //     "domanda": "",
-    //     "risposta": "",
-    //     "opzioni": [""]
-    // },
-    // {
-    //     "domanda": "",
-    //     "risposta": "",
-    //     "opzioni": [""]
-    // },
-    // {
-    //     "domanda": "",
-    //     "risposta": "",
-    //     "opzioni": [""]
-    // }, {
+    {
+        "domanda": "Stasera ho fame, cosa mi ordino?",
+        "risposta": "Un porco ramen!",
+        "opzioni": ["Na bella pizza", "Del sushi", "Un porco ramen!"]
+    },
+    {
+        "domanda": "Cosa vuoi per natale?",
+        "risposta": "Un gruppo col padre di roman dove ci mandiamo solo selfie del cazzo senza chattare",
+        "opzioni": ["Un gruppo col padre di roman dove ci mandiamo solo selfie del cazzo senza chattare","Un viaggio in giappone", "Una carbonara fatta bene"]
+    },
+    {
+        "domanda": "",
+        "risposta": "",
+        "opzioni": [""]
+    }, 
+    //{
     //     "domanda": "",
     //     "risposta": "",
     //     "opzioni": [""]
