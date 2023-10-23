@@ -2,36 +2,40 @@
  * Libraries part
  */
 const express = require('express')
-import helmet from "helmet";
+const helmet = require("helmet");
 const ejs = require('ejs')
+const bodyParser = require("body-parser");
+const path2public = __dirname + "/public" || null; // è il link alla cartella public del sito
+
 /**
  * Setting up part
  */
 const app = express()
 app.use(helmet());
-app.use(express.cookieParser());
+//app.use(express.cookieParser());
+app.set('view engine', 'ejs');
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(bodyParser.json());
+if (path2public) {
+  app.use(express.static(path2public));
+}
 
-// set a cookie
-app.use(function (req, res, next) {
-  // check if client sent cookie
-  var cookie = req.cookies.cookieName;
-  if (cookie === undefined) {
-    // no: set a new cookie
-    res.cookie('Hint',"UXVhbmRvIHNvcnJpZGkgc2luY2VyYW1lbnRlLCB0aSBtb3JkaSBsYSBsaW5ndWEgdHJhIGkgZGVudGksIGUgbWkgcGlhY2UgdW4gc2FjY28=", { maxAge: 900000, httpOnly: true });
-    console.log('cookie created successfully');
-  } else {
-    // yes, cookie was already present 
-    console.log('cookie exists', cookie);
-  } 
-  next(); // <-- important!
-});
 /**
  * Routes part
  */
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  res.render("main.ejs")
 })
 /**
  * Server part
  */
-app.listen(3000)
+app.listen(3000, function () {
+  console.log("server is listening on port", 3000)
+})
+
+
+app.get('*', function (req, res) {
+  return res.redirect('/');
+});

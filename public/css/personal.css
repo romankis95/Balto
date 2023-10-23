@@ -1,0 +1,106 @@
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    background-color: #ffcccb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#quiz {
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#start-button-container {
+    display: block;
+    position: relative;
+}
+
+#start-button {
+    background-color: #3fb4e9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    background-color: #2e8bc9;
+}
+
+#flower-decorations {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+}
+
+#flower-decorations img {
+    width: 100px;
+    height: auto;
+}
+
+#start-button:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.option-button {
+    background-color: #3fb4e9;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    /* Imposta la larghezza al 100% per farli allineare verticalmente */
+}
+
+.option-button:hover {
+    background-color: #2e8bc9;
+}
+
+#options-list {
+    list-style: none;
+    padding: 0;
+}
+
+#retry-button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    /* Imposta la larghezza al 100% per farlo allineare verticalmente */
+}
+
+#retry-button:hover {
+    background-color: #e65959;
+}
